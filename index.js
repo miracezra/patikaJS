@@ -10,9 +10,11 @@ function digitalClock() {
     "Friday",
     "Saturday",
   ];
-  let meetingMessage = `Hi ${meeting} welcome <br>${
+
+
+  let meetingMessage = `Hi ${meeting} welcome <br><p>${
     days[date.getDay()]
-  } <p>${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+  } ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} </p> <p class="meetText"> You are in your first assignment of javascript. Congratulations for coming this far.</p>`;
 
   document.getElementById("meet").innerHTML = meetingMessage;
 }
